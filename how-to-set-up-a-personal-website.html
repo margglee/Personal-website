@@ -1,51 +1,62 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="UTF-8"/>
   <title>Margaret Geling Lee's Website</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <!-- Link to Font Awesome-->
+  <script src="https://kit.fontawesome.com/fa13444f75.js"></script>
 </head>
 
-<body bgcolor= "AliceBlue;">
-  <h1>Margaret Geling Lee</h1>
+<body>
+  <header>
+    <h1>Margaret Geling Lee</h1>
+    <h2>University of Michigan Computer Science Student<br>Class of 2021</h2>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="how-to-set-up-a-personal-website.html">How to Set Up A Personal Website</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <h2>How To Set Up A Personal Website At The University Of Michigan</h2>
 
-  <h2>University of Michigan Computer Science Student</h2>
-  <h2>Class of 2021</h2>
+    <p>This is a basic how to make your own web page and hosting it on UM servers using my experience
+    making this website (this is just one way to do it - using the terminal). I had some trouble
+    understanding the instructions so hopefully this will help. </p>
 
+    <h3>There are at least three UM departments that host websites:</h3>
+    <ul>
+      <li><a href="http://www.umich.edu/~umweb/how-to/homepage.html">IT</a></li>
+      <li><a href="https://www.eecs.umich.edu/dco/kb/How+do+I+create+a+website+on+the+EECS+web+server%3F">EECS</a></li>
+      <li><a href="https://computing.si.umich.edu/confluence/display/SIC/Personal+People+Site">School of Information</a></li>
+    </ul>
 
-  <a href="index.html">Home</a>
+    <h3>This tutorial is for making a site on the general UM server(IT)</h3>
 
-  <h2>How To Set Up A Personal Website At The University Of Michigan</h2>
+    <ol>
+      <li>Open the terminal and type in "ssh sftp.itd.umich.edu" always without quotes for every step.
+        Also, if you have a CAEN account, "ssh uniquename@login.engin.umich.edu" works too.</li>
 
-  <h4>This is a basic how to make your own web page and hosting it on UM servers using my experience
-  making this website (this is just one way to do it - using the terminal). As a CS student, I had some trouble
-  understanding the instructions so hopefully this will help. </h4>
+      <li>Go to the folder where the file is stored. Type in "cd Public/html". Type in "ls" to check what files are
+      in this folder, currently it should only contain index.html.</li>
 
-  <h3>There are at least three UM departments that host websites:</h3>
-  <ul>
-    <li><a href="http://www.umich.edu/~umweb/how-to/homepage.html">IT</a></li>
-    <li><a href="https://www.eecs.umich.edu/dco/kb/How+do+I+create+a+website+on+the+EECS+web+server%3F">EECS</a></li>
-    <li><a href="https://computing.si.umich.edu/confluence/display/SIC/Personal+People+Site">School of Information</a></li>
-  </ul>
+      <li>To open the file, one way is to use vim, it is easy to get trapped if you are a first time user (careful!).
+      Type in "vim index.html" to enter the file and edit it.</li>
 
-  <h3>This tutorial is for making a site on the general UM server(IT)</h3>
+      <li>To start editing, type in "i" and delete all the default text. Write in the file using HTML syntax.</li>
 
-  <ol>
-    <li>Open the terminal and type in "ssh sftp.itd.umich.edu" always without quotes for every step.
-      Also, if you have a CAEN account, "ssh uniqename@login.engin.umich.edu" works too.</li>
+      <li>To stop editing, press the esc button, then type ":", "w", and "q" to leave the file.</li>
 
-    <li>Go to the folder where the file is stored. Type in "cd Public/html". Type in "ls" to check what files are
-    in this folder, currently it should only contain index.html.</li>
+      <li>To publish the site, type "chmod -R a+rX ~/Public/html".</li>
 
-    <li>To open the file, one way is to use vim, it is easy to get trapped if you are a first time user (careful!).
-    Type in "vim index.html" to enter the file and edit it.</li>
-
-    <li>To start editing, type in "i" and delete all the default text. Write in the file using HTML syntax.</li>
-
-    <li>To stop editing, press the esc button, then type ":", "w", and "q" to leave the file.</li>
-
-    <li>To publish the site, type "chmod -R a+rX ~/Public/html".</li>
-
-    <li>Check your new site at http://www.umich.edu/~uniqname/</li>
-</ol>
+      <li>Check your new site at http://www.umich.edu/~uniqname/</li>
+    </ol>
+  </main>
+  <footer>
+    &#169; 2019
+  </footer>
 </body>
+
 </html>
