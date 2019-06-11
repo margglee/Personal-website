@@ -3,15 +3,29 @@ body{
   color: #ffffff;
   font-family: Verdana, Arial;
 }
-header, footer{
+header{
   background: #d699ff;
   color: #1a1a1a;
   text-align: center;
   padding: .5%;
+  margin-bottom: 1%;
   background: -moz-linear-gradient(top, #d699ff 0%, #b3ffe0 100%);
   background: -webkit-linear-gradient(#d699ff 0%, #b3ffe0 100%);
-  background: -o-linear-gradient(top, #d699ff 0%, #b3ffe0 100%);
+  background: -o-linear-gradient(#d699ff 0%, #b3ffe0 100%);
   background: linear-gradient(#d699ff 0%, #b3ffe0 100%);
+  font-family: Verdana, Arial;
+}
+
+footer{
+  background: #d699ff;
+  color: #1a1a1a;
+  text-align: center;
+  padding: .5%;
+  margin-top: 1%;
+  background: -moz-linear-gradient(top, #b3ffe0 0%, #d699ff 100%);
+  background: -webkit-linear-gradient(#b3ffe0 0%, #d699ff 100%);
+  background: -o-linear-gradient(#b3ffe0 0%, #d699ff 100%);
+  background: linear-gradient(#b3ffe0 0%, #d699ff 100%);
   font-family: Verdana, Arial;
 }
 
@@ -37,8 +51,12 @@ a{
   color:  #ffffff;
 }
 
-a:visited{
+nav a:visited{
   color: #1a1a1a;
+}
+
+a:visited{
+  color: #d699ff;
 }
 
 img{
