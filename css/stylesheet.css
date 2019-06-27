@@ -44,6 +44,8 @@ nav{
 nav a{
   text-decoration: none;
   padding: 15px;
+  padding-top: 10%;
+  color: #1a1a1a;
 }
 
 a{
@@ -52,7 +54,7 @@ a{
 }
 
 nav a:visited{
-  color: #1a1a1a;
+  color: #d699ff;
 }
 
 a:visited{
