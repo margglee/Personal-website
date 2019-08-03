@@ -3,12 +3,12 @@ body{
   color: #ffffff;
   font-family: Verdana, Arial;
 }
+
 header{
   background: #d699ff;
   color: #1a1a1a;
   text-align: center;
-  padding: .5%;
-  margin-bottom: 1%;
+  padding: 5%;
   background: -moz-linear-gradient(top, #d699ff 0%, #b3ffe0 100%);
   background: -webkit-linear-gradient(#d699ff 0%, #b3ffe0 100%);
   background: -o-linear-gradient(#d699ff 0%, #b3ffe0 100%);
@@ -29,6 +29,16 @@ footer{
   font-family: Verdana, Arial;
 }
 
+a{
+  font-size: 30pt;
+  color:  #ffffff;
+  padding: 1%;
+}
+
+a:visited{
+  color: #d699ff;
+}
+
 nav{
   box-sizing: border-box;
   color: #1a1a1a;
@@ -37,29 +47,24 @@ nav{
   height: 20%;
   min-height: 50px;
   min-width: 100%;
-  margin-bottom: 10px;
+  #margin-bottom: 10px;
   overflow: auto;
 }
 
+
 nav a{
   text-decoration: none;
-  padding: 15px;
-  padding-top: 10%;
+  text-align: center;
+  padding: 5% 1% 1% 5%;
   color: #1a1a1a;
+  font-size: 20pt;
 }
 
-a{
-  font-size: 20pt;
-  color:  #ffffff;
-}
 
 nav a:visited{
   color: #d699ff;
 }
 
-a:visited{
-  color: #d699ff;
-}
 
 img{
   width: 25%;
@@ -71,4 +76,8 @@ li.sub{
   list-style-type: none;
   color: #ffffff;
   font-family: Verdana, Arial;
+}
+
+main{
+  padding: 1%;
 }
